@@ -1,9 +1,8 @@
 function [t,y] = xungchunhat(Tw,Tp,Ns,Np)
-Timewindow = Np*Tp; % time window
-ts = Timewindow/(Ns-1); % sampling time
-t = 0:ts:Timewindow; % time vector
-Nsp = round(Tp/ts); % number of samples within Tp
-
+Timewindow = Np*Tp; 
+ts = Timewindow/(Ns-1);
+t = 0:ts:Timewindow;
+Nsp = round(Tp/ts); 
 y = zeros(size(t));
 for k = 1:Ns
  if mod(t(k),Nsp*ts) <= Tw

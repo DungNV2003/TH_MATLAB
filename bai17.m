@@ -1,6 +1,4 @@
 function t = bai17(thang, nam)
-% t = 0;
-
 switch thang
     case {1, 3, 5, 7, 8, 10, 12}
         t = 31;

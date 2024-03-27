@@ -1,3 +1,4 @@
+%xung tam giac
 T = 0.2;
 t = [0:T/2:T*6];
 y = zeros(size(t));
